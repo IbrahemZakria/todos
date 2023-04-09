@@ -3,8 +3,9 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 class textFormField extends StatelessWidget {
-  textFormField({required this.hinText});
+  textFormField({required this.hinText, required this.onChange});
   String hinText;
+  Function(String) onChange;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,10 @@ class textFormField extends StatelessWidget {
               if (value == null || value.isEmpty) {
                 return hinText;
               }
+              
             },
+                          onChanged:onChange,
+
             decoration: InputDecoration(
                 labelText: hinText,
                 labelStyle: TextStyle(color: Colors.grey, fontSize: 20),

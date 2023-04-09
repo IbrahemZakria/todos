@@ -20,7 +20,7 @@ class MyThemeData {
         subtitle1: TextStyle(
             color: Colors.black, fontWeight: FontWeight.w500, fontSize: 22),
         headline2: TextStyle(
-            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
+            color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15),
         headline1: TextStyle(
             color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22)),
     scaffoldBackgroundColor: ligtBodyColor,

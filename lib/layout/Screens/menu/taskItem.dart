@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:todo/Style/My_Theme_Data.dart';
-
+import 'package:todo/models/taskModel.dart';
 
 class taskItem extends StatelessWidget {
-  const taskItem({super.key});
+   taskItem({required this.taskModel});
+  TaskModel taskModel;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class taskItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  'play Pppp',
+                  taskModel.title,
                   style: TextStyle(
                       color: MyThemeData.PrimaryColor,
                       fontSize: 18,
@@ -40,7 +41,7 @@ class taskItem extends StatelessWidget {
                       size: 18,
                     ),
                     Text(
-                      'play Pppp',
+                      taskModel.describtion ,
                       style: TextStyle(
                           color: MyThemeData.PrimaryColor,
                           fontSize: 12,

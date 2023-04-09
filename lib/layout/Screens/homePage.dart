@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:todo/Style/My_Theme_Data.dart';
 import 'package:todo/layout/Screens/menu/menuPage.dart';
 import 'package:todo/layout/floatingButton/floatingSheet.dart';
+import 'package:todo/layout/setting/settingsScreen.dart';
 
 class homePage extends StatefulWidget {
   homePage({super.key});
@@ -15,7 +16,7 @@ class homePage extends StatefulWidget {
 }
 
 class _homePageState extends State<homePage> {
-  List<Widget> ScreensTaps = [menuPage(), menuPage()];
+  List<Widget> ScreensTaps = [menuPage(), settingsScreen()];
 
   int currentIndex = 0;
 
